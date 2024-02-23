@@ -1,0 +1,10 @@
+    <p>
+        <strong>Anonymous:</strong>
+        <%= comment.body %>
+    </p>
+
+<%= button_to "Destroy Comment", [comment.article, comment], method: :delete, data: {
+                  turbo_confirm: "Are you sure?"
+                } %>
+
+
